@@ -71,6 +71,8 @@ public String getSkraceniNaziv() {
 }
 
 public void setSkraceniNaziv(String skraceniNaziv) {
+	if(skraceniNaziv == null)
+		throw new RuntimeException("Null");
 	this.skraceniNaziv = skraceniNaziv;
 }
 
@@ -79,6 +81,8 @@ public int getDan() {
 }
 
 public void setDan(int dan) {
+	if(dan == 0)
+		throw new RuntimeException("Dan je 0");
 	this.dan = dan;
 }
 
@@ -87,6 +91,8 @@ public int getMesec() {
 }
 
 public void setMesec(int mesec) {
+	if(mesec == 0)
+		throw new RuntimeException("Greska u mesecu");
 	this.mesec = mesec;
 }
 
@@ -95,6 +101,8 @@ public int getGodina() {
 }
 
 public void setGodina(int godina) {
+	if(godina == 0)
+		throw new RuntimeException("Greska u godini");
 	this.godina = godina;
 }
 
