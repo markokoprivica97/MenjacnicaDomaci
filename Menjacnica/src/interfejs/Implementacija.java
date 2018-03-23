@@ -10,7 +10,9 @@ public class Implementacija implements IntefejsMenjacnice{
 	public void dodajKurs(String skraceniNaziv, String naziv, int dan, int mesec, int godina, double srednji,
 			double kupovni, double prodajni) {
 		
-	Valuta v=new Valuta();
+
+		Valuta v=new Valuta();
+
 		v.setDan(dan);
 		v.setMesec(mesec);
 		v.setGodina(godina);
@@ -25,7 +27,7 @@ public class Implementacija implements IntefejsMenjacnice{
 
 	@Override
 	public void izbrisiKurs(String skraceniNaziv, int dan, int mesec, int godina) {
-		// TODO Auto-generated method stub
+
 		Valuta v=new Valuta();
 		v.setDan(dan);
 		v.setMesec(mesec);
