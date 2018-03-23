@@ -1,3 +1,4 @@
+package valuta;
 
 public class Valuta {
 private String nazivValute;
